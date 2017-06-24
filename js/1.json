@@ -1,0 +1,17 @@
+{
+"people" :[
+{ "dataName": "海哥", "dataType": "周总结","dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"王总","dataContent":"最low" },
+{ "dataName": "福建", "dataType": "日总结", "dataStartTime":"", "dataLast":"2017:01:02","dataGave":"吴总","dataContent":"喜欢看内涵段子的，最近还分享了几部资源" },
+{ "dataName": "low仿薛之谦",  "dataType": "日总结", "dataStartTime":"", "dataLast":"2017:01:02","dataGave":"卫总","dataContent":"奥体薛之谦，低仿的" },
+{ "dataName": "大胸低", "dataType": "日总结", "dataStartTime":"", "dataLast":"2017:01:02","dataGave":"冯总","dataContent":"最浪的，TM没有之一" },
+{ "dataName": "女1",  "dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"吴总","dataContent":"最帅的没有之一" },
+{ "dataName": "室友", "dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"王总","dataContent":"最闷骚的，没有之一，不知不觉，就骚起来了" },
+{ "dataName": "骚明",  "dataType": "日总结", "dataStartTime":"", "dataLast":"2017:01:02","dataGave":"吴总","dataContent":"最骚的，没有之一，骚气一出万法皆伏" },
+{ "dataName": "菜菜", "dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"王总","dataContent":"最帅的没有之一" },
+{ "dataName": "大哥", "dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"吴总","dataContent":"最帅的没有之一" },
+{ "dataName": "饭胸低","dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"吴总","dataContent":"外号大奔哥，非常犀利" },
+{ "dataName": "女2","dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"王总","dataContent":"最帅的没有之一" },
+{ "dataName": "女3","dataType": "周总结", "dataStartTime":"2017:01:02", "dataLast":"2017:01:02","dataGave":"卫总","dataContent":"最帅的没有之一" }
+
+]
+}

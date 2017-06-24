@@ -1,0 +1,217 @@
+.head_one_blu {
+	font-size: 1vw;
+	margin-top: 0.6rem;
+	margin-left: 0.5rem;
+}
+
+.head_one_green {}
+
+#title {
+	height: 2.5rem;
+	line-height: 2.5rem;
+	/*background-size:cover;*/
+	background-size: 100% 10rem;
+	/*margin-top: 3rem;*/
+}
+
+#head {
+	margin-bottom: 1rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	border-left: 5px solid cornflowerblue;
+	background-color: #EEF7FB;
+	/*margin-top: 3rem;*/
+}
+
+#head div {
+	margin-left: 2rem;
+}
+
+.batch:hover {
+	color: gainsboro;
+	cursor: pointer;
+	border: 0px;
+}
+
+.table_ids {
+	height: 2rem;
+	line-height: 2rem;
+}
+
+.line_div:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.line_div {
+	height: 2rem;
+	line-height: 2rem;
+}
+
+#back_main:hover {
+	cursor: pointer;
+	color: gray;
+}
+
+.back_alph {
+	position: absolute;
+	z-index: -3;
+	width: 100%;
+	height: 100%;
+	background: none repeat scroll 0 0 black;
+	opacity: 0.4;
+}
+
+#table_id {
+	font-size: 1vw;
+}
+
+.back_body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: white;
+	z-index: -1;
+}
+
+.list_btn {
+	font-size: 1vw;
+	color: gainsboro;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0.2rem 0
+}
+
+.list_btn:hover {
+	/*background-color: cornflowerblue;*/
+	color: ghostwhite;
+	cursor: pointer;
+}
+
+.Paging {
+	position: absolute;
+	top: 24rem;
+	left: 65rem;
+}
+
+.gaybackcolore {
+	background-color: #F1F1F1;
+}
+
+.ToView {
+	background-color: gainsboro;
+	margin-top: 0.4rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	padding: 0rem 0.5rem;
+	border-left: solid #1E90FF 3px;
+}
+
+.title {
+	background-color: gainsboro;
+	margin-top: 0.4rem;
+	height: 1rem;
+	line-height: 1rem;
+	padding: 0rem 0.5rem;
+	border-left: solid green 3px;
+}
+
+.left_list div {
+	font-size: 1vw;
+}
+
+#head_one {
+	height: 2.5rem;
+	margin-top: 1.1rem;
+	margin-bottom: 0.5rem;
+	border-left: 5px solid limegreen;
+	background-color: #EEF7EA;
+}
+
+.table_id_top {
+	margin-bottom: 0.5rem;
+}
+
+.News:hover {
+	background-color: cornflowerblue;
+	font-size: 1vw;
+	height: 1.5rem;
+	padding: 0 0.5rem;
+	color: whitesmoke;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	line-height: 1.5rem;
+	cursor: pointer;
+}
+
+.News {
+	background-color: cornflowerblue;
+	font-size: 1vw;
+	height: 1.5rem;
+	padding: 0 0.5rem;
+	color: whitesmoke;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	line-height: 1.5rem;
+}
+
+.out_window {
+	background-color: white;
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	width: 50%;
+	height: 30rem;
+	z-index: -1;
+}
+.out_window div{
+	margin: 0.8rem 0rem;
+}
+.out_window_btn{
+	margin-top: 2rem;
+	padding-left: 4rem;
+}
+.backMain{
+	position: absolute;
+	top: 24rem;
+	left: 55rem;
+	border: 1px solid gainsboro;
+	padding: 0 0.5rem;
+	color: gray;
+}
+.backMain:hover{
+	cursor: pointer;
+	color: gainsboro;
+}
+.delete {
+	position: absolute;
+	top: 24rem;
+	left: 60rem;
+	color: red;
+}
+
+
+.delete:hover {
+	cursor: pointer;
+	position: absolute;
+	top: 24rem;
+	left: 60rem;
+	color: red;
+}
+
+.changePageBtnColor {
+	background-color: cornflowerblue;
+	color: white;
+}
+
+.addContentBtn:hover {
+	color: gray;
+	cursor: pointer;
+}
+
+.addContentBackBtn:hover {
+	color: gray;
+	cursor: pointer;
+}

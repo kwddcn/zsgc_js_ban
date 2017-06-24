@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/mystely.css" />
+		<link rel="stylesheet" href="css/htmlStely.css" />
+		<style>
+		</style>
+	</head>
+
+	<body style="height: 100%;">
+		<!--弹出框-->
+		<div class="back_alph"></div>
+		<div class="out_window"></div>
+		<!--窗体-->
+		<div class="back_body"></div>
+		<!--top-->
+		<div id="title" class="weith_100 " style="background-color: #189ACA;">
+			<div class="logo_hc" style="width: 6%;margin-left: 1.5rem;">
+				<img src="img/WechatIMG1 2.png" />
+			</div>
+			<!--<img src="http://pic1.sc.chinaz.com/Files/pic/pic9/201612/apic24642_s.jpg" />-->
+			<!--<h1 class="font_color_gra">海哥管理系统-基础功能</h1>-->
+		</div>
+		<div id="left_list" style="background-color:#293038;width: 10%;height: 43rem;">
+			<div class='list_btn_model weith_100 look_top_gar' style='padding: 0.2rem 0;background-color:#189ACA' onclick='changeBtn_backround($(this))'>
+			</div>
+		</div>
+		<div class="main" style="padding-left: 1%;width: 89%;">
+			<div class="weith_100">
+				<div id="table_id" class="weith_100 " style="height: 20rem;">
+					<div class="addContentView" style="display: none;">
+						<div class='weith_95 text_left look_boderdown_blu' style="color: dodgerblue; height: 2rem;line-height: 2rem;padding-left: 1rem;margin-top: 1rem;">新增工作汇报</div>
+						<div class="weith_95 typeLine look_bodergayup font_color_gra">
+
+							<div class='weith_10  text_right background_grywhite' style="padding: 0.5rem 1rem;">类型</div>
+							<div class='weith_40 height_10 text_left'>
+								<select id='addType' onchange="getNeedTime()" style="margin-left: 1rem; margin-top: 0.4rem;height: 1.2rem;width: 8rem;"></select>
+							</div>
+							<div class='weith_10  text_right background_grywhite' style="padding: 0.5rem 1rem;">
+								日期
+							</div>
+							<div class='weith_30 height_10 text_left'>
+								<div class="addStartTime weith_30">
+									<input class="text_left" type="text" readonly="readonly" style="height: 1rem;width: 70%;margin-top: 0.4rem;" />
+								</div>
+								<div style="margin-top: 0.4rem;">至</div>
+								<div class="addOverTime weith_30">
+									<input class="text_left" type="text"readonly="readonly" style="height: 1rem;width: 70%;margin-top: 0.4rem;" />
+								</div>
+							</div>
+						</div>
+						<div class="weith_95 typeLine look_bodergayup font_color_gra">
+							<div class='weith_10  text_right background_grywhite' style="padding: 0.5rem 1rem;">
+								汇报给
+							</div>
+							<div class='weith_40 height_10 addGave text_left' style="padding-top:0.3rem;">
+								<input class="text_left" type="text" style="height: 1.2rem;width: 18rem;margin-left: 1rem;" />
+							</div>
+							<div class='weith_10  text_right background_grywhite' style="padding: 0.5rem 1rem;">
+								标题
+							</div>
+							<div class='weith_30 height_10 text_left'>
+								<div class="addtitle weith_100">
+									<input class="text_left" type="text" style="height: 1rem;width: 70%;margin-top: 0.4rem;margin-left: -4rem;" />
+								</div>
+							</div>
+
+						</div>
+						<div class="weith_95 typeLine look_bodergayup font_color_gra">
+							<div class='weith_10  text_right background_grywhite' style="padding-left: 1rem; padding-right: 1rem;height: 20rem;line-height: 20rem;">
+								本次总结
+							</div>
+							<div class='weith_80 height_10 text_left addNowText'>
+								<textarea name="nowAddContent" class="text_left" style="height:18rem;width: 70%;margin-left: 1rem;margin-top: 1rem;resize: none;">
+								
+								</textarea>
+							</div>
+						</div>
+						<div class="weith_95 typeLine look_bodergayup font_color_gra">
+							<div class='weith_10  text_right background_grywhite' style="padding-left: 1rem; padding-right: 1rem;height: 10rem;line-height: 10rem;">
+								下次计划
+							</div>
+							<div class='weith_80 height_10 text_left addNextText'>
+								<textarea name="nextAddContent" class="text_left" style="height:9rem;width: 70%;margin-left: 1rem;margin-top: 0.5rem;resize: none;">
+								</textarea>
+							</div>
+						</div>
+						<div class="weith_95 typeLine look_bodergayup font_color_gra">
+							<div class="addContentBtn look_bodergay background_blu font_color_white" onclick="add()" style="padding: 0.2rem 1rem;margin-left: 2rem;margin-top: 2rem;">添加</div>
+							<div class="addContentBackBtn look_bodergay background_blu font_color_white" onclick="backMainList()" style="padding: 0.2rem 1rem;margin-left: 2rem;margin-top: 2rem;">返回列表</div>
+						</div>
+						<!--<div class='weith_70 text_right' onclick='add()' id='back_main'>添加</div>-->
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/myjsban.js" ></script>
+		<!--<script type="text/javascript" src="js/MyJs.js"></script>-->
+		<script type="text/javascript" src="js/date.js"></script>
+		<script>
+//			ajax();
+			var types = ["请选择类型", "#", "操作", "汇报人", "标题", "类型", "开始时间", "结束日期", "汇报给","简介"];
+			var userArray = [];
+			var list_arr = ["发起流程", "工作办理", "办公列表", "公司公告", "工作汇报", "日程安排", "任务管理", "计划管理", "知识库", "会议管理"];
+			var peopleType = ["选择类型", "正常男", "老司机", "普通女", "游戏男", "闷骚男"];
+			var workType = ["选择类型", "日总结", "周总结", "月总结"];
+			var pagelenth = 5;
+			var pagestar = 0;
+			var pagelast = 5;
+			var table_id=document.getElementById('table_id');
+			console.log("--------------->" + nowWeektime());
+			//			window.onload = function() {
+			//回调data
+			jqxhrAjax("js/1.json", function(data) {
+				$.each(data.people, function(idx, item) {
+					if(item.dataStartTime == "")
+						arr = ["", "", item.dataName, item.dataType + "-" + item.dataName + "-" + item.dataStartTime + "至" + item.dataLast, item.dataType, item.dataStartTime + item.dataLast, item.dataLast, item.dataGave, item.dataContent];
+					else
+						arr = ["", "", item.dataName, item.dataType + "-" + item.dataName + "-" + item.dataLast, item.dataType, item.dataStartTime, item.dataLast, item.dataGave, item.dataContent];
+
+					userArray.push(arr);
+				});
+				//					alert("scsses");
+				//				initContent(star, last);
+			});
+			var addContentViews = $(".addContentView").clone();
+			$(".addContentView").hide();
+			//窗口初始化
+			$(document).ready(function() {
+
+				initlist();
+				initTableTop();
+				initContent(0, 5);
+
+			});
+			//			}
+		</script>
+	</body>
+
+</html>
